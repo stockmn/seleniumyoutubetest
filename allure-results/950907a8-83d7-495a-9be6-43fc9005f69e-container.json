@@ -1,0 +1,1 @@
+{"uuid":"950907a8-83d7-495a-9be6-43fc9005f69e","name":"automation","children":["c471a352-2733-4d1c-9a01-99e8bd9b5b08"],"befores":[{"name":"testDriver","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1692694153336,"stop":1692694158630}],"afters":[],"start":1692694153316,"stop":1692694160390}
