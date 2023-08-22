@@ -34,7 +34,7 @@ public class SearchMusic {
         driver.findElement(By.id("search-icon-legacy")).click();
         driver.manage().timeouts().implicitlyWait(100, TimeUnit.SECONDS);
         driver.findElement(By.xpath("//*[@id=\"video-title\"]/yt-formatted-string")).click();
-        driver.manage().timeouts().implicitlyWait(7000,TimeUnit.SECONDS);
+        driver.manage().timeouts().implicitlyWait(7,TimeUnit.SECONDS);
 
         //driver.findElement(By.id("ad-text:2w")).click();
     }
@@ -42,5 +42,12 @@ public class SearchMusic {
     @Then("the songs will be played")
     public void theSongsWillBePlayed() {
         System.out.println("Song is playing");
+    }
+
+    @Then("the driver exit the process after some time")
+    public void theDriverExitTheProcessAfterSomeTime() {
+        System.out.println("driver exiting ");
+        driver.manage().timeouts().implicitlyWait(9,TimeUnit.SECONDS);
+        driver.quit();
     }
 }
